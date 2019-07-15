@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="16" tileheight="16" nextobjectid="6">
+ <tileset firstgid="1" source="tiles/testTileSet.tsx"/>
+ <layer name="collision" width="16" height="9">
+  <data encoding="csv">
+2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,4,4,4,4,0,0,0,0,0,0,
+2,2,2,2,2,0,0,0,0,0,0,2,2,2,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,4,4,4,4,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2
+</data>
+ </layer>
+ <objectgroup name="spawn">
+  <object id="1" name="1" gid="3" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="facing_left" type="bool" value="false"/>
+    <property name="player_id" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2" name="2" gid="3" x="208" y="48" width="16" height="16">
+   <properties>
+    <property name="facing_left" type="bool" value="true"/>
+    <property name="player_id" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="3" gid="3" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="facing_left" type="bool" value="false"/>
+    <property name="player_id" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="4" name="4" gid="3" x="208" y="112" width="16" height="16">
+   <properties>
+    <property name="facing_left" type="bool" value="true"/>
+    <property name="player_id" type="int" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
